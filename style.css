@@ -178,9 +178,12 @@ section .title::after{
   position: relative;
 }
 .video {
-  object-fit: cover !important;
+  object-fit: cover;
+  position: absolute;
   width: 100%;
-  height: 500px; /* You can change the height to whatever you want here. */
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .home .max-width{
