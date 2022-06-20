@@ -173,6 +173,11 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
+.pamba {
+  height: 100vh;
+  position: relative;
+}
+
 .home .max-width{
   width: 100%;
   display: flex;
