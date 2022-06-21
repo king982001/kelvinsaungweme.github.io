@@ -10,7 +10,10 @@
 html{
     scroll-behavior: smooth;
 }
-
+:root{
+    --primary:hsla(245,97%,63%,0.65);
+    --second:hsla(30,96%,62%,0.65);
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -165,8 +168,8 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-     background: rgba(0,0,100,0.4);
-    background: url("images/IMG_5563.png") no-repeat center;
+    background:linear-gradient(135deg,var(--primary),var(--secondary)),
+               url("images/IMG_5563.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
