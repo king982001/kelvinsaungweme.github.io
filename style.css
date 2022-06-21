@@ -165,6 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
+     background: rgba(0,0,100,0.4);
     background: url("images/IMG_5563.png") no-repeat center;
     height: 100vh;
     color: #fff;
