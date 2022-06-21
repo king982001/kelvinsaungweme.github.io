@@ -201,11 +201,11 @@ section .title::after{
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+.home .home-content .chinja{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.home .home-content .chinja span{
     color: crimson;
     font-weight: 500;
 }
