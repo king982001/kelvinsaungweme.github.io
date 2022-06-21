@@ -96,7 +96,7 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color: #000000;
     font-size: 35px;
     font-weight: 600;
 }
@@ -195,15 +195,18 @@ section .title::after{
 }
 .home .home-content .text-1{
     font-size: 27px;
+    color: #000000;
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    color: #000000;
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    color: #000000;
 }
 .home .home-content .text-3 span{
     color: crimson;
@@ -212,7 +215,7 @@ section .title::after{
 .home .home-content a{
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: #000000;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -256,7 +259,7 @@ section .title::after{
 .about .about-content .right a{
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: #000000;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
