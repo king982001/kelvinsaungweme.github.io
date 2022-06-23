@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <div class="scroll-up-btn">
@@ -236,6 +237,185 @@
 </div>
 </section>
 
+ <!-- Video Section -->	
+<section>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.containerz{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding:0 10%;
+  background:linear-gradient(90deg, #fff 60%, #eee 40.1%);
+}
+
+.containerz .side-bar{
+  width:400px;
+}
+
+.containerz .side-bar.active{
+  display: none;
+}
+
+.containerz .side-bar .list{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.containerz .side-bar .list li{
+  padding:10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+}
+
+.containerz .side-bar .list li::before{
+  content: '';
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:-5px;
+  width: 0%;
+  height: 3px;
+  background-color: #000;
+  transition: width .2s linear .2s;
+}
+
+.containerz .side-bar .list li.active,
+.container .side-bar .list li:hover{
+  font-size: 30px;
+}
+
+.containerz .side-bar .list li.active::before,
+.container .side-bar .list li:hover::before{
+  right: -5px;
+  width: 105%;
+}
+
+.containerz .video-container{
+  flex:1;
+}
+
+.containerz .video-container video{
+  width: 100%;
+  object-fit: cover;
+}
+
+#menu-btn{
+  left:20px;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width:1200px){
+  .container{
+    position: relative;
+  }
+
+  .containerz .side-bar{
+    position: absolute;
+    top:0; left:-110%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    padding:30px;
+  }
+
+  .containerz .side-bar .list{
+    height: 100%;
+    justify-content: center;
+  }
+
+  .containerz .side-bar.active{
+    box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+    display: initial;
+    left:0;
+  }
+}
+
+@media (max-width:450px){
+
+  .containerz{
+    padding:20px;
+  }
+
+  .container .side-bar{
+    width: 300px;
+  }
+
+  .containerz .side-bar .list li{
+    font-size: 15px;
+  }
+
+  .containerz .side-bar .list li.active{
+    font-size: 20px;
+  }
+
+}
+</style>
+
+
+<div class="containerz">
+<div id="menu-btn" class="fas fa-bars"></div>
+    <div class="side-bar">
+
+        <ul class="list">
+            <li class="active" data-src="images/vid-1.mp4">cheese burger</li>
+            <li data-src="images/Project 1.mp4">pizza decoration</li>
+            <li data-src="images/vid-3.mp4">sandwich decoration</li>
+            <li data-src="images/vid-4.mp4">puring coffee</li>
+            <li data-src="images/vid-5.mp4">chocolate closeup</li>
+            <li data-src="images/vid-6.mp4">slicing cake</li>
+            <li data-src="images/vid-7.mp4">donuts zooming</li>
+            <li data-src="images/vid-8.mp4">instead noodles</li>
+        </ul>
+
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" loop muted autoplay controls></video>
+    </div>
+
+</div>
+
+<script>
+
+let sideBar = document.querySelector('.containerz .side-bar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    sideBar.classList.toggle('active');
+};
+
+let video = document.querySelector('.containerz .video-container video');
+let videoLinks = document.querySelectorAll('.containerz .side-bar .list li');
+
+videoLinks.forEach(link =>{
+    link.onclick = () =>{
+        let src = link.getAttribute('data-src');
+        video.src = src;
+        sideBar.classList.remove('active');
+        videoLinks.forEach(remove =>{remove.classList.remove('active')});
+        link.classList.add('active');
+    }
+})
+
+</script>
+</section>
+
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
@@ -317,6 +497,7 @@
             </div>
         </div>
     </section>
+		
 
     <!-- teams section start -->
     <section class="teams" id="teams">
