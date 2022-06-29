@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href=" newletter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -690,7 +691,7 @@ videoLinks.forEach(link =>{
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form method="post" autocomplete="off" name="google-sheet">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" required>
@@ -713,12 +714,48 @@ videoLinks.forEach(link =>{
             </div>
         </div>
     </section>
-
+<!--NEWSLETTER SECTION-->
+        <section class="pop">
+		<div class="containerz">
+    <form method="post" autocomplete="off" name="google-sheet">
+      <h1>Join Our Newsletter</h1>
+      <p><b>Subscribe to our monthly newsletter and get updates so that you can also get involved in shaping the world with us. </b></p>
+      <div class="email-box">
+        <i class="fas fa-envelope"></i>
+        <input class="tbox" type="email" name="Email"  placeholder="Enter your email">
+        <button class="btnz" type="submit" name="submit"  value="Submit" required="";><b>Subscribe</b></button>
+      </div>
+    </form>
+  </div>
+</section
 <!-- footer section -->
     <footer>
         <span>Created By <a href="https://www.kelvinsaungweme.com">kelvinsaungweme</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
+<script type="text/javascript">
 
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwoeLsQjBVYj2BWfsTuGdzBScUFpOWsY04HdOKmf_qxg4SGC6Iums1bYyeCMj5-3c-pAw/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have successfully subscribed."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
+		<script type="text/javascript">
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwoeLsQjBVYj2BWfsTuGdzBScUFpOWsY04HdOKmf_qxg4SGC6Iums1bYyeCMj5-3c-pAw/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have successfully subscribed."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
     <script src="script.js"></script>
 </body>
 </html>
