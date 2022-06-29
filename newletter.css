@@ -3,9 +3,6 @@
   padding: 0;
   font-family: 'Nunito', sans-serif;
 }
-body{
-  background: #333;
-}
 .containerp{
   background: url('images/newsletter.jpg') no-repeat center;
   background-size: cover;
