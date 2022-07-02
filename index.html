@@ -38,6 +38,7 @@
     </nav>
         <!--TOP NAVBAR AND SUBMENU SECTION-->
 	<!-- home section start -->
+	<section>
 <style>
  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 .popup .content {
@@ -185,17 +186,8 @@ padding: 20px;
   <div class="input-field"><input placeholder="Password" class="validate"></div>
     <button class="second-button">Sign in</button>
     <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
-      
-     
    </div>
   </div>
-<script>
- function togglePopup() {
- document.getElementById("popup-1")
-  .classList.toggle("active");
-}
-</script>
-
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -205,9 +197,14 @@ padding: 20px;
 		<button onclick="togglePopup()" type="button"><span></span> Hire Me </button>
             </div>
         </div>
+<script>
+      function togglePopup() {
+        document.getElementById("popup-1")
+      .classList.toggle("active");
+}
+</script>
     </section>
-	</section>
-	</section>
+</section>
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
