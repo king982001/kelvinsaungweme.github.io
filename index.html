@@ -38,7 +38,6 @@
     </nav>
         <!--TOP NAVBAR AND SUBMENU SECTION-->
 	<!-- home section start -->
-	<section class="home" id="home">
 <style>
  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 .popup .content {
@@ -112,23 +111,6 @@ button{
     position: relative;
     overflow: hidden;
 }
-span{
-    background: #009688;
-    height: 100%;
-    width: 0;
-    border-radius: 25%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-button :hover span{
-    width: 100%;
-}
-button :hover{
-    border: none;
-}
 .first-button {
 color: white;
 font-size: 18px;
@@ -175,20 +157,8 @@ padding: 20px;
 }
 
 </style>
-
- <div class="popup" id="popup-1">
-   <div class="content">
-    <div class="close-btn" onclick="togglePopup()">
-     </div>
-     
-<h1>Sign in</h1> 
-  <div class="input-field"><input placeholder="Email" class="validate"></div>
-  <div class="input-field"><input placeholder="Password" class="validate"></div>
-    <button class="second-button">Sign in</button>
-    <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
-   </div>
-  </div>
-        <div class="max-width">
+<section class="home" id="home">		
+<div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Kelvin Saungweme</div>
@@ -196,6 +166,18 @@ padding: 20px;
 		<button onclick="togglePopup()" type="button"><span></span> Hire Me </button>
             </div>
         </div>
+ <div class="popup" id="popup-1">
+   <div class="content">
+    <div class="close-btn" onclick="togglePopup()">
+     </div>
+	   
+<h1>Sign in</h1> 
+  <div class="input-field"><input placeholder="Email" class="validate"></div>
+  <div class="input-field"><input placeholder="Password" class="validate"></div>
+    <button class="second-button">Sign in</button>
+    <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
+   </div>
+  </div>
     </section>
     <!-- about section start -->
     <section class="about" id="about">
