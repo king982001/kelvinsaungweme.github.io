@@ -38,7 +38,7 @@
     </nav>
         <!--TOP NAVBAR AND SUBMENU SECTION-->
 	<!-- home section start -->
-	<section>
+	<section class="home" id="home">
 <style>
  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 .popup .content {
@@ -179,7 +179,7 @@ padding: 20px;
  <div class="popup" id="popup-1">
    <div class="content">
     <div class="close-btn" onclick="togglePopup()">
-     ×</div>
+     </div>
      
 <h1>Sign in</h1> 
   <div class="input-field"><input placeholder="Email" class="validate"></div>
@@ -188,7 +188,6 @@ padding: 20px;
     <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
    </div>
   </div>
-    <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
@@ -197,14 +196,7 @@ padding: 20px;
 		<button onclick="togglePopup()" type="button"><span></span> Hire Me </button>
             </div>
         </div>
-<script>
-      function togglePopup() {
-        document.getElementById("popup-1")
-      .classList.toggle("active");
-}
-</script>
     </section>
-</section>
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
@@ -912,6 +904,12 @@ videoLinks.forEach(link =>{
                 .catch(error => console.error('Error!', error.message))
             })
   </script>
+<script>
+      function togglePopup() {
+        document.getElementById("popup-1")
+      .classList.toggle("active");
+}
+</script>
     <script src="script.js"></script>
 </body>
 </html>
