@@ -694,17 +694,17 @@ videoLinks.forEach(link =>{
                     <form method="post" autocomplete="off" name="google-sheet">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" name="Name"placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="Email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name= "Subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" name= "Message" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
@@ -734,13 +734,13 @@ videoLinks.forEach(link =>{
     </footer>
 <script type="text/javascript">
 
-	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwoeLsQjBVYj2BWfsTuGdzBScUFpOWsY04HdOKmf_qxg4SGC6Iums1bYyeCMj5-3c-pAw/exec'
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwtJvFkMj2UNA8amPeTSdcFubyyIhmJe-_exnHSDGr03xHxHXY48mJAOYHp_KEzPInU/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("You have successfully subscribed."))
+                .then(response => alert("Message successfully send!."))
                 .catch(error => console.error('Error!', error.message))
             })
   </script>
