@@ -533,6 +533,20 @@ section .title::after{
   display: flex;
   align-items: center;
 }
+.btn-contact{
+    width:100%;
+    padding:0.5rem 1rem;
+    font-size:1.1rem;
+    background-color: #2ecc71;
+    cursor:pointer;
+    outline:none;
+    color:#fff;
+    transition:.3s;
+    border:none;
+}
+.btn-contact hover{
+    background: #27ae60;
+}
 .right form .button-area button{
   color: #fff;
   display: block;
