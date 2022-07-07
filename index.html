@@ -169,15 +169,18 @@ padding: 20px;
  <div class="popup" id="popup-1">
    <div class="content">
     <div class="close-btn" onclick="togglePopup()">
-     </div>   
+     </div> 
+ <form method="post" autocomplete="off" name="google-sheet">
 <h1>Hire Me</h1> 
-  <div class="input-field"><input placeholder="Full Name" class="validate"></div>
-  <div class="input-field"><input placeholder="Company-Name" class="validate"></div>
-  <div class="input-field"><input placeholder="Email" class="validate"></div>
-  <div class="input-field"><input placeholder="Phone-Number" class="validate"></div>   
-  <button class="second-button">Register</button>
-  <p>Hire me for a personal or company project!<a href="/signup.html">Learn More!</a></p>
-   </div>
+  <div class="input-field"><input type="text" name= "fullname" placeholder="Full Name" class="validate" required></div>
+  <div class="input-field"><input type="text" name= "companyname" placeholder="Company-Name" class="validate"></div>
+  <div class="input-field"><input type="text" name= "email" placeholder="Email" class="validate" required></div>
+  <div class="input-field"><input type="text" name= "phonenumber" placeholder="Phone-Number" class="validate" required></div>   
+  <input type="submit" class="second-button" name="submit" value="Submit">
+  <p>Hire me for a personal or company project!<a href="/signup.html">Learn More!</a></p> 
+  </form>
+	    <input type="submit" class="btn-contact"name="submit" value="Submit">
+  </div>
   </div>
     </section>
     <!-- about section start -->
@@ -878,13 +881,25 @@ videoLinks.forEach(link =>{
   </script>
 		<script type="text/javascript">
 
-	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwoeLsQjBVYj2BWfsTuGdzBScUFpOWsY04HdOKmf_qxg4SGC6Iums1bYyeCMj5-3c-pAw/exec'
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbx8ndKoXKDZ5f1_36DqBV1BAZsTaOr9prp_SaIIOidgATjE7zptfrdx5rjNEmhzxCE--Q/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => alert("You have successfully subscribed."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
+	<script type="text/javascript">
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwWeRPju0QB8S0MKm1DaVBHodZt9RglvuS5dxaflqxtufZxH8jUjrLE87wg9VuCmq7CHg/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Hiring process finished!.We will get back to you!."))
                 .catch(error => console.error('Error!', error.message))
             })
   </script>
