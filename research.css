@@ -6,7 +6,7 @@
   font-family: 'Nunito', sans-serif;
 }
 ::selection{
-  color:#000000;
+  color:#fff;
   background: #007bff;
 }
 body{
@@ -38,7 +38,7 @@ body{
 }
 .items span.active,
 .items span:hover{
-  color: #000000;
+  color: #fff;
   background: #007bff;
 }
 
