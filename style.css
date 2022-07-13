@@ -532,6 +532,20 @@ section .title::after{
   display: flex;
   align-items: center;
 }
+.btn-hire{
+    width:100%;
+    padding:0.5rem 1rem;
+    font-size:1.1rem;
+    background-color: #2ecc71;
+    cursor:pointer;
+    outline:none;
+    color:#fff;
+    transition:.3s;
+    border-radius: 50px;
+}
+.btn-hire hover{
+    background: #27ae60;
+}
 .btn-contact{
     width:100%;
     padding:0.5rem 1rem;
