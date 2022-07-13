@@ -107,6 +107,7 @@ section .title::after{
     color: #fff;
 }
 .navbar .menu li{
+    font-weight: bold;
     list-style: none;
     display: inline-block;
 }
@@ -533,7 +534,7 @@ section .title::after{
   align-items: center;
 }
 .btn-hire{
-    width:100%;
+    width: 200px;
     padding:0.5rem 1rem;
     font-size:1.1rem;
     background-color: #2ecc71;
