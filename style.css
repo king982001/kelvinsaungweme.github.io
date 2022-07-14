@@ -301,6 +301,7 @@ section .title::after{
     background: crimson;
 }
 .services .serv-content .card .box{
+    width:relative;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box{
@@ -411,6 +412,7 @@ section .title::after{
     background: crimson;
 }
 .teams .carousel .card .box{
+    width:relative;
     display: flex;
     flex-direction: column;
     align-items: center;
