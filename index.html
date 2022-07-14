@@ -101,8 +101,23 @@ color: #bfc0c0;
 background: #262626;
 outline: none;
 }
+.button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  padding: 20px 40px;
+  border-radius: 8px;
+  color: #212121;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
 	
-button{
+button-1{
   color: #FE4880;
   border: 3px solid #FE4880;
   background-image: linear-gradient(to right, transparent 50%, #FE4880 50%);
@@ -115,7 +130,7 @@ button{
   position: relative;
   overflow: hidden;
 }
-.button:hover{
+.button-1:hover{
 color: #FFF;
 background-position: 100%;
 }
@@ -172,7 +187,7 @@ padding: 20px;
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Kelvin Saungweme</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-		<button onclick="togglePopup()" type="button"><span></span> Hire Me </button>
+		<button onclick="togglePopup()" type="button button-1"><span></span> Hire Me </button>
             </div>
         </div>
  <div class="popup" id="popup-1">
