@@ -478,7 +478,7 @@ section .title::after{
 .contact .contact-content .left .icons{
     margin: 10px 0;
 }
-.contact .contact-content .text .social-media a {
+.social-media a {
     border:1px solid gray;
     width:45PX;
     height: 41px;
@@ -490,7 +490,7 @@ section .title::after{
     border-radius: 5px;
     transition: all .3s;
 }
-.contact .contact-content .text .social-media a:hover {
+.social-media a:hover {
       border:1px solid white;
       color: white;
       transition: all .3s;
