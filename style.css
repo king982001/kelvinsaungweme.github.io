@@ -478,6 +478,11 @@ section .title::after{
 .contact .contact-content .left .icons{
     margin: 10px 0;
 }
+.details{
+    display:block;
+    font-size: 1.1em;
+    margin: bottom 8px;
+}
 .social-media a {
     border:1px solid gray;
     width:45PX;
