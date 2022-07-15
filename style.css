@@ -484,7 +484,8 @@ section .title::after{
     margin: bottom 8px;
 }
 .social-media {
-background:crimson;
+background:#DC143C;
+color:#DC143C;
 }
 .social-media a {
     border:1px solid gray;
