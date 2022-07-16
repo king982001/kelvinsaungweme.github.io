@@ -110,6 +110,7 @@ section .title::after{
     font-weight: bold;
     list-style: none;
     display: inline-block;
+    color: #000000;
 }
 .navbar .menu li a{
     display: block;
